@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   updateAuthor:
     runs-on: ubuntu-latest
@@ -37,7 +36,7 @@ jobs:
        with:
          github-token: ${{ secrets.GH_TOKEN }}
          number: ${{ steps.pr-1.outputs.pull-request-number }}
-         
+
      - name: Merging PR
        uses: juliangruber/approve-pull-request-action@v1
        with:
