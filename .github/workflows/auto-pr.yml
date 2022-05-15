@@ -26,8 +26,7 @@ jobs:
          branch: "automatic-pr-branch"
          base: main
          title: "Automatic PR"
-         body:
-           This is to show automatic PR creation
+         body: This is to show automatic PR creation
          token: ${{ secrets.GITHUB_TOKEN }}
          delete-branch: true
 
