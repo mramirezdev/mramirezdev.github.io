@@ -7,7 +7,6 @@ on:
 jobs:
  updateAuthor:
    name: Updating Author
-   build:
    runs-on: ubuntu-latest
    steps:
      - name: checking out code
