@@ -6,7 +6,9 @@ on:
 
 jobs:
  updateAuthor:
+   name: Updating Author
     runs-on: ubuntu-latest
+
     steps:
       - name: checking out code
         uses: actions/checkout@v2
