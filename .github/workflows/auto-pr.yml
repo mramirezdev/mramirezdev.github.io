@@ -22,15 +22,15 @@ jobs:
      - name: Action to be use for automatic PR
        id: pr-1
        uses: peter-evans/create-pull-request@v3
-         with:
-           branch: "automatic-pr-branch"
-           base: main
-           title: "Automatic PR"
-           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+       with:
+         branch: "automatic-pr-branch"
+         base: main
+         title: "Automatic PR"
+         committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
           author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-           body: This is to show automatic PR creation
-           token: ${{ secrets.GITHUB_TOKEN }}
-           delete-branch: true
+         body: This is to show automatic PR creation
+         token: ${{ secrets.GITHUB_TOKEN }}
+         delete-branch: true
 
      - name: Approving PR
        uses: juliangruber/approve-pull-request-action@v1
