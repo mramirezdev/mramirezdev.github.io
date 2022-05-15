@@ -6,8 +6,8 @@ on:
 
 jobs:
  updateAuthor:
-   name: Updating Author
-    runs-on: ubuntu-latest
+   name: Updating Authoe
+     runs-on: ubuntu-latest
 
     steps:
       - name: checking out code
