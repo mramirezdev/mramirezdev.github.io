@@ -26,9 +26,8 @@ jobs:
          branch: "automatic-pr-branch"
          base: main
          title: "Automatic PR"
-         committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-         body: This is to show automatic PR creation
+         body:
+           This is to show automatic PR creation
          token: ${{ secrets.GITHUB_TOKEN }}
          delete-branch: true
 
