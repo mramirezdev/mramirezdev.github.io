@@ -5,6 +5,7 @@ on:
     branches:
       - main
 jobs:
+  author:
     runs-on: "ubuntu-latest"
     steps:
       - name: checking out code
